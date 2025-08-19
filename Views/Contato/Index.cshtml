@@ -2,7 +2,12 @@
     ViewData["Title"] = "Listagem de Contatos";
 }
 
+<div class="text-center">
 
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class=" btn btn-primary" role="button" asp-controller_"Contato" asp-action_"Criar">Novo Contato</a>
+    </div>
+    <br/>
     <h1 class="display-4 text-center">Listagem de Contatos</h1>
 
 <table class="table">
@@ -20,19 +25,38 @@
             <td>Tainara Santos</td>
             <td>tainara@gmail.com</td>
             <td>(14)11111-1111</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary">Editar</a>
+                    <a role="button" class="btn btn-danger">Apagar</a>
+                </div>
+            </td>
         </tr>
         <tr>
             <th scope="row">2</th>
             <td>Vitoria Fusco</td>
             <td>vitoria@gmail.com</td>
             <td>(14)22222-2222</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary">Editar</a>
+                    <a role="button" class="btn btn-danger">Apagar</a>
+                </div>
+            </td>
         </tr>
         <tr>
             <th scope="row">3</th>
             <td>Gilson Barreto</td>
             <td>gilson@gmail.com</td>
             <td>(14)33333-3333</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary">Editar</a>
+                    <a role="button" class="btn btn-danger">Apagar</a>
+                </div>
+            </td>
         </tr>-
         
     </tbody>
 </table>
+</div>
