@@ -5,7 +5,7 @@
 <div class="text-center">
 
     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-        <a class=" btn btn-primary" role="button" asp-controller_"Contato" asp-action_"Criar">Novo Contato</a>
+        <a class=" btn btn-primary" role="button" asp-controller="Contato" asp-action="Criar">Novo Contato</a>
     </div>
     <br/>
     <h1 class="display-4 text-center">Listagem de Contatos</h1>
@@ -27,8 +27,8 @@
             <td>(14)11111-1111</td>
             <td>
                 <div class="btn-group" role="group">
-                    <a role="button" class="btn btn-primary">Editar</a>
-                    <a role="button" class="btn btn-danger">Apagar</a>
+                        <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="Apagar">Apagar</a>
                 </div>
             </td>
         </tr>
@@ -39,8 +39,8 @@
             <td>(14)22222-2222</td>
             <td>
                 <div class="btn-group" role="group">
-                    <a role="button" class="btn btn-primary">Editar</a>
-                    <a role="button" class="btn btn-danger">Apagar</a>
+                        <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="Apagar">Apagar</a>
                 </div>
             </td>
         </tr>
@@ -51,8 +51,8 @@
             <td>(14)33333-3333</td>
             <td>
                 <div class="btn-group" role="group">
-                    <a role="button" class="btn btn-primary">Editar</a>
-                    <a role="button" class="btn btn-danger">Apagar</a>
+                    <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="Apagar">Apagar</a>
                 </div>
             </td>
         </tr>-
