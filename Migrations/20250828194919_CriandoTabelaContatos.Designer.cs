@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CadastroDeContatosMVC.Migrations
 {
     [DbContext(typeof(BancoContext))]
-    [Migration("20250827203751_CriandoTabelaContatos")]
+    [Migration("20250828194919_CriandoTabelaContatos")]
     partial class CriandoTabelaContatos
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
