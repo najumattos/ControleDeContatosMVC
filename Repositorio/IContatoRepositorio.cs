@@ -9,5 +9,7 @@ namespace CadastroDeContatosMVC.Repositorio
         List<ContatoModel> BuscarTodos(); //get
         ContatoModel Adicionar(ContatoModel contato);
         ContatoModel Atualizar(ContatoModel contato);
+
+        bool Apagar(int id);
     }
 }
