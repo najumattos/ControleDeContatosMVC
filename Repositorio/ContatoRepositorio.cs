@@ -27,5 +27,26 @@ namespace CadastroDeContatosMVC.Repositorio
         {
             return _bancoContext.Contatos.ToList();
         }
+
+        public ContatoModel ListarPorId(int id)
+        {
+            return _bancoContext.Contatos.FirstOrDefault(x => x.Id == id);
+        }
+
+        public ContatoModel Atualizar(ContatoModel contato)
+        {
+            ContatoModel contatoDB = ListarPorId(contato.Id);
+
+            if (contatoDB == null) throw new System.Exception("Houve um erro na atualização do contato!!");
+
+            contatoDB.Nome = contato.Nome;
+            contatoDB.Email = contato.Email;
+            contatoDB.Celular = contato.Celular;
+
+            _bancoContext.Contatos.Update(contatoDB);
+            _bancoContext.SaveChanges();
+            return contatoDB;
+
+        }
     }
 }
