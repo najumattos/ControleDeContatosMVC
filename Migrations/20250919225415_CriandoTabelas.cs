@@ -2,7 +2,7 @@
 
 namespace CadastroDeContatosMVC.Migrations
 {
-    public partial class CriandoTabelaContatos : Migration
+    public partial class CriandoTabelas : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

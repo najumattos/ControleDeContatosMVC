@@ -21,7 +21,16 @@ namespace CadastroDeContatosMVC.Controllers
 
         public IActionResult Criar()
         {
-            return View();
+            try{
+            TempData["MensagemSucesso"] = "Contato Cadastrado com sucesso";
+                return RedirectToAction("Index"); 
+            }
+            catch (System.Exception erro)
+            {
+                TempData["MensagemErro"] = $"Não deu certo, detalhe do erro: {erro.Message}";
+                return RedirectToAction("Index");
+            }
+        
         }
 
         public IActionResult Editar(int id)
